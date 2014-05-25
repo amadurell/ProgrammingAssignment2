@@ -63,3 +63,18 @@ cacheSolve <- function(x) {
 ##           [,1] [,2]
 ##      [1,]   -1  1.5
 ##      [2,]    1 -1.0
+## Also:
+##      x <- matrix(c(2,2,3,2),2,2)
+##      cm <- makeCacheMatrix(x)
+##  and then:
+##      cacheSolve(cm)
+##  it returns:
+##           [,1] [,2]
+##      [1,]   -1  1.5
+##      [2,]    1 -1.0
+##  when run again:
+##      cacheSolve(cm)
+##      getting cached inverse matrix
+##           [,1] [,2]
+##      [1,]   -1  1.5
+##      [2,]    1 -1.0
